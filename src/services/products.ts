@@ -5,7 +5,7 @@ export interface Product {
   /**
    * The unique identifier for the product.
    */
-  id: string;
+  id: number;
   /**
    * The name of the product.
    */
@@ -20,8 +20,8 @@ export interface Product {
 export async function getProducts(): Promise<Product[]> {
   // Mocked product list
   return [
-    { id: '1', name: 'Product 1' },
-    { id: '2', name: 'Product 2' },
-    { id: '3', name: 'Product 3' },
+    { id: 1, name: 'Product 1' },
+    { id: 2, name: 'Product 2' },
+    { id: 3, name: 'Product 3' },
   ];
 }
